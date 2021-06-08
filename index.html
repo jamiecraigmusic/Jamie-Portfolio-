@@ -9,8 +9,7 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
   <!-- CSS Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -28,45 +27,50 @@
 </head>
 
 <body>
-    <header>
-
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <div class="navbar-brand"></div>
-
-
-          <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-
-          <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-          </div>
+    <header id="home">
+      <nav class="navbar">
+        <a href="#" class="toggle-button" id="hamburger-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
   
   <section id="header-section">
     <div class="container-fluid">
-      <img class="logo" src="assets/img/logo_1.png" alt="Jamie Craig Logo">
-    <button type="button" class="btn btn-primary resume-btn">Download Resume</button>
+      <img class="logo" src="assets/img/Logo1.png" alt="Jamie Craig Logo">
+    <button type="button" class="btn btn-lg resume-btn">Download Resume</button>
     </div>
-    
   </section>
 
+  <section class="about-section" id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 left-bio">
+          <img class="bio-photo img-fluid" src="assets/img/about.png" alt="Picture of Jamie Craig">
+        </div>
+        <div class="col-lg-6 right-bio">
+          <h1>Bio</h1>
+          <p>Coming from different corners of the world, Jamie, a South Florida native, and Pouya Pourtahmasbi, an Iranian transplant, 
+            serendipitously met while studying music at a university in South Florida. It didn't take long for a musical spark to ignite 
+            between the two as they collaborated on music projects and exchanged thoughts on life. After graduation, the two produced an EP 
+            for four of Jamie’s songs in addition to exploring the South Florida music scene, playing shows at various venues alongside 
+            percussionist Reza Filsoofi and guitarist Austin Mann. </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
